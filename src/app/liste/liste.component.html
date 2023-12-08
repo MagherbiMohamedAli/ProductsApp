@@ -1,0 +1,10 @@
+<table border="1">
+    <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <td>{{p.titre}}</td>
+        <td>{{p.cat}}</td>
+        <td>
+           <a (click)="deleteProduct(p.id)">delete</a>
+        </td>
+    </tr>
+</table>
